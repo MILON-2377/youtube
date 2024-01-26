@@ -4,8 +4,424 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>youtube with tailwind and daisy ui</title>
+    <!--tailwind and daisy ui link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!--icons link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    
+<body class="relative">
+    <header class="sticky top-0 ">
+        <nav class="flex items-center justify-evenly">
+            <div class=" h-16 w-16 rounded-full hover:bg-slate-200 text-3xl  flex justify-center items-center cursor-pointe ml-3">
+                <i class="fa-solid fa-bars cursor-pointer"></i>
+            </div>
+            <div class="h-28 w-[200px] cursor-pointer">
+                <img        src="https://download.logo.wine/logo/YouTube/YouTube-Logo.wine.png" alt="youtube logo" class=" w-[190px] text-center my-auto -ml-12 -mt-2">
+            </div>
+            <div class="flex justify-center items-center h-16 w-[650px] border-solid border-[2px] rounded-[30px] pl-1">
+                <input type="search" placeholder="Search" class="h-14 flex-1 outline-none border-none px-6 text-xl rounded-l-[30px] ">
+                <div class="text-4xl h-[61px] w-[130px] bg-slate-100 flex justify-center items-center rounded-[30px] rounded-l-none border-none cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer">
+                </i></div>
+            </div>
+            <div class="h-16 w-16 rounded-full bg-slate-200 text-4xl flex justify-center items-center hover:bg-slate-300 cursor-pointer">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+            <div class="text-4xl h-16 w-16 rounded-full hover:bg-slate-200 flex justify-center items-center cursor-pointer">
+                <i class="fa-solid fa-folder-plus"></i>
+            </div>
+            <div class="text-4xl h-16 w-16 rounded-full hover:bg-slate-200 flex justify-center items-center cursor-pointer">
+                
+                    
+
+                <div class="relative text-slate-400 cursor-pointer">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="h-[30px] bg-red-700 w-[36px] rounded-2xl flex justify-center items-center absolute -top-[8px] left-[14px]"><p class="text-2xl text-white font-semibold">9+</p></div>
+                </div>
+                
+            </div>
+            <div class="text-4xl h-16 w-16 rounded-full bg-blue-600 text-white flex justify-center items-center">
+                <p class="text-4xl">m</p>
+            </div>
+        </nav>
+        <div class="ml-[164px] mr-4 w-11/12">
+            <ul class="list-none grid grid-cols-11 gap-5">
+                <li class="h-[55px] bg-slate-800 text-white text-xl font-bold rounded-2xl w-[70px] flex items-center justify-center hover:bg-slate-700 cursor-pointer">All</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center -ml-10 hover:bg-slate-300 cursor-pointer">Mixes</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center hover:bg-slate-300 cursor-pointer">Music</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl col-span-2 flex items-center justify-center hover:bg-slate-300 cursor-pointer">Relagious Recitation</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center hover:bg-slate-300 cursor-pointer">Dramedy</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center hover:bg-slate-300 cursor-pointer">My Sign</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center hover:bg-slate-300 cursor-pointer">Sports</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center hover:bg-slate-300 cursor-pointer">Movies</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center hover:bg-slate-300 cursor-pointer">Natoks</li>
+                <li class="h-[55px] bg-slate-200 text-xl font-medium rounded-2xl flex items-center justify-center hover:bg-slate-300 cursor-pointer">Live</li>
+            </ul>
+        </div>
+    </header>
+
+    <!--main section-->
+
+    <!-- navegation section -->
+    <main class="flex gap-6">
+
+    <section class=" w-40 pl-4  flex justify-center items-center -mt-14">
+        <div class=" -mt-[6220px] sticky top-[95px]">
+            <div class="h-[120px] w-[100px] rounded-xl hover:bg-slate-100 flex flex-col justify-center gap-2 items-center cursor-pointer">
+                <i class="fa-solid fa-house text-3xl"></i>
+                <p class="text-xl">Home</p>
+            </div>
+            <div class="h-[120px] w-[100px] rounded-xl hover:bg-slate-100 flex flex-col justify-center gap-2 items-center cursor-pointer">
+                <i class="fa-regular fa-file-video text-3xl"></i>
+                <p class="text-xl">Shorts</p>
+            </div>
+            <div class="h-[120px] w-[100px] rounded-xl hover:bg-slate-100 flex flex-col justify-center gap-2 items-center cursor-pointer">
+                <i class="fa-regular fa-file-video text-3xl"></i>
+                <p class="text-[16]">Subscription</p>
+            </div>
+            <div class="h-[120px] w-[100px] rounded-xl hover:bg-slate-100 flex flex-col justify-center gap-2 items-center cursor-pointer">
+                <i class="fa-regular fa-credit-card text-3xl"></i>
+                <p class="text-xl">You</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- this is items section -->
+        <section class="px-6 mt-[55px] w-full grid grid-rows-10 gap-16 -z-50">
+                <section>
+                    <div class="grid grid-cols-2 gap-5 h-[600px]">
+
+                        
+                        <div class="flex flex-col gap-6">
+                                <!-- video link and video player -->    
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/walking lion.mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class="flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                        <div class="flex flex-col gap-6">
+                                 <!-- video link and video player -->
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/Animal Theme Song_HD_720p-(Hd9video).mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class=" flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                </section>
+                <section>
+                    <div class="grid grid-cols-2 gap-5 h-[600px]">
+
+                        
+                        <div class="flex flex-col gap-6">
+                                <!-- video link and video player -->    
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/Leke Prabhu Ka Naam Song - Tiger 3 Ft Salman Khan, Katrina Kaif_HD_720p-(Hd9video).mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class="flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                        <div class="flex flex-col gap-6">
+                                 <!-- video link and video player -->
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/Apni Ankho Mein - Pratibha Singh Baghel_HD_720p-(Hd9video).mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class=" flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                </section>
+                <section>
+                    <div class="grid grid-cols-2 gap-5 h-[600px]">
+
+                        
+                        <div class="flex flex-col gap-6">
+                                <!-- video link and video player -->    
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/walking lion.mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class="flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                        <div class="flex flex-col gap-6">
+                                 <!-- video link and video player -->
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/Animal Theme Song_HD_720p-(Hd9video).mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class=" flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                </section>
+                <section>
+                    <div class="grid grid-cols-2 gap-5 h-[600px]">
+
+                        
+                        <div class="flex flex-col gap-6">
+                                <!-- video link and video player -->    
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/walking lion.mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class="flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                        <div class="flex flex-col gap-6">
+                                 <!-- video link and video player -->
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/Animal Theme Song_HD_720p-(Hd9video).mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class=" flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                </section>
+                <section>
+                    <div class="grid grid-cols-2 gap-5 h-[600px]">
+
+                        
+                        <div class="flex flex-col gap-6">
+                                <!-- video link and video player -->    
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/walking lion.mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class="flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                        <div class="flex flex-col gap-6">
+                                 <!-- video link and video player -->
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/Animal Theme Song_HD_720p-(Hd9video).mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class=" flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                </section>
+                <section>
+                    <div class="grid grid-cols-2 gap-5 h-[600px]">
+
+                        
+                        <div class="flex flex-col gap-6">
+                                <!-- video link and video player -->    
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/walking lion.mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class="flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                        <div class="flex flex-col gap-6">
+                                 <!-- video link and video player -->
+                                <div class="h-[400px] rounded-2xl">
+                                    <video src="../videos/Apni Ankho Mein - Pratibha Singh Baghel_HD_720p-(Hd9video).mp4" controls class="w-full rounded-2xl"></video>
+                                </div>
+
+                                <!-- this is video title and description -->
+                                <div class="flex gap-5">
+                                    <div class=" h-[70px] w-[70px] rounded-full bg-yellow-600 text-white flex justify-center items-cente">
+
+                                    </div>
+                                    <div class=" flex gap-6">
+                                        <div class="flex flex-col gap-3">
+                                            <p class="text-2xl font-bold text-slate-900">Je Jibon Tomar Amar | Full Natok | Musfiq R. Farhan | Samira Mahi |
+                                            </p>
+                                            <p class="text-slate-300 caption-bottom text-2xl">KS Entertainment <span class="h-2 w-2 rounded-full bg-slate-400"></span></p>
+                                            <p class="text-slate-300 text-xl">282K views <span class="text-slate-300">6 hours ago</span></p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                </section>
+        </section>
+    </main>
 </body>
 </html>
